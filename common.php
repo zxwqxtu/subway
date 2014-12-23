@@ -47,7 +47,7 @@ class Ticket12306 {
 
         $selectedTickets = self::$selectedTickets;
 
-        $url = "https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date={$date}&leftTicketDTO.from_station={$from}&leftTicketDTO.to_station={$to}&purpose_codes=ADULT";
+        $url = "https://kyfw.12306.cn/otn/leftTicket/queryT?leftTicketDTO.train_date={$date}&leftTicketDTO.from_station={$from}&leftTicketDTO.to_station={$to}&purpose_codes=ADULT";
         $ret = Fsock::getBody($url, 'get', array(), self::$requestHeaders);
         $ret = json_decode($ret, true);
 
@@ -74,7 +74,7 @@ class Ticket12306 {
                     if (isset($selectedTickets[$key]) && !empty($value)  && empty(self::$listInfos[$keyTmp])) {
                         $body = "{$date}--{$selectedTickets[$key]}:{$value}\n";
                         $content .= $body;
-                        error_log($body, 3, dirname(__FILE__).'/'.$value.'.log');
+                        error_log($body, 3, dirname(__FILE__).'/logs/'.$value.'.log');
                     }
 
                     self::$listInfos[$keyTmp] = 1;
