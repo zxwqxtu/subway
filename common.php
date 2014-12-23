@@ -1,6 +1,6 @@
 <?php 
-require_once dirname(__DIR__).'/PHPMailer_v5.1/class.phpmailer.php';
-require_once dirname(__DIR__).'/lib/fsock.lib.php';
+require_once 'class.phpmailer.php';
+require_once 'fsock.lib.php';
 
 class Ticket12306 {
     public static $requestHeaders = array();
@@ -98,7 +98,7 @@ class Ticket12306 {
         $mail->Host = "smtp.gmail.com";
         $mail->Port = 465;
         $mail->Username = 'wq@baisonmail.com';
-        $mail->Password = 'xxxxx';
+        $mail->Password = '3240603198';
         
         $mail->SetFrom('wq@baisonmail.com','火车票');
         $mail->AddReplyTo('wq@baisonmail.com','火车票');
