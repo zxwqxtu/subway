@@ -46,5 +46,11 @@ $params = array(
 
 );
 
-Ticket12306::search($params);
+while(true) {
+    try {
+        Ticket12306::search($params);
+    } catch(Exception $e) {
+
+    }
+}
 
