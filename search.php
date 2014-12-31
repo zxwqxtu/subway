@@ -39,8 +39,8 @@ $params = array(
         'emails' => array(
             '960875184@qq.com'=> '王强'
         ),
-        'dates' => array('2015-02-27', '2015-02-26'),
-        'destnations' => array('BJP', 'SJP'),
+        'dates' => array('2015-02-27'),
+        'destnations' => array('BJP'),
         'origin' => 'HYQ',
     ),
 
