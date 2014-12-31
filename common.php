@@ -95,13 +95,13 @@ class Ticket12306 {
     //    $mail->SMTPDebug = 2;
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = "ssl";             
-        $mail->Host = "smtp.gmail.com";
+        $mail->Host = "smtp.qq.com";
         $mail->Port = 465;
-        $mail->Username = 'wq@baisonmail.com';
-        $mail->Password = '3240603198';
+        $mail->Username = '1625654566@qq.com';
+        $mail->Password = 'xxxxxxx';
         
-        $mail->SetFrom('wq@baisonmail.com','火车票');
-        $mail->AddReplyTo('wq@baisonmail.com','火车票');
+        $mail->SetFrom('1625654566@qq.com','火车票');
+        $mail->AddReplyTo('1625654566@qq.com','火车票');
         foreach ($toAddressArr as $key => $val) {
             $mail->AddAddress($key, $val);
         }

@@ -23,25 +23,25 @@ $params = array(
         'destnations' => array('CZQ', 'FSQ'),
         'origin' => 'BJP',
     ),
-    '肖正刚'=> array(
+     '王强1'=> array(
         'selectedTickets' => array(
-            'swz'=>'商务座',
-            'tz'=>'特等座',
-            'zy'=>'一等座',
+#            'swz'=>'商务座',
+#            'tz'=>'特等座',
+#            'zy'=>'一等座',
             'ze'=>'二等座',
-            'gr'=>'高级软卧',
-            'rw'=>'软卧',
+#            'gr'=>'高级软卧',
+#            'rw'=>'软卧',
             'yw'=>'硬卧',
             'rz'=>'软座',
             'yz'=>'硬座',
-        #    'wz'=>'无座',
+#            'wz'=>'无座',
         ),
         'emails' => array(
-            '510417779@qq.com'=> '肖正刚'
+            '960875184@qq.com'=> '王强'
         ),
-        'dates' => array('2015-02-14', '2015-02-15', '2015-02-16'),
-        'destnations' => array('HYQ'),
-        'origin' => 'GZQ',
+        'dates' => array('2015-02-27', '2015-02-26'),
+        'destnations' => array('BJP', 'SJP'),
+        'origin' => 'HYQ',
     ),
 
 );
